@@ -4,7 +4,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Button from "@/app/components/button";
 
-const CompanyFormModal = dynamic(() => import("@/app/components/company-form-modal"), {
+const CompanyFormModal = dynamic(() => import("./company-form-modal"), {
   ssr: false,
 });
 
@@ -15,12 +15,10 @@ export default function AddCompanyButton() {
       <Button onClick={() => setShow(true)}>
         Add Company
       </Button>
-      {show && (
-        <CompanyFormModal 
+      <CompanyFormModal 
           onSubmit={console.log}
           show={show}
           onClose={() => setShow(false)} />
-      )}
     </>
   );
 }
