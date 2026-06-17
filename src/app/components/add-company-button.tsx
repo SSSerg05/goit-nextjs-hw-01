@@ -4,7 +4,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Button from "@/app/components/button";
 
-const CompanyFormModal = dynamic(() => import("./company-form-modal"), {
+const CompanyFormModal = dynamic(() => import("@/app/components/company-form-modal"), {
   ssr: false,
 });
 
