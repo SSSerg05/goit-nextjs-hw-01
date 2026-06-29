@@ -1,5 +1,5 @@
 import React from "react";
-impport Image from "next/image";
+import Image from "next/image";
 
 export interface HeaderProps {
   children: React.ReactNode;
