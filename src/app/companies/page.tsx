@@ -28,6 +28,15 @@ export default function Page({}: PageProps) {
           country="USA"
           joinedDate="2023-01-01"
         />
+                <CompanyRow
+          id={2}
+          category="Products"
+          company="Pepsi"
+          status={Status.Active}
+          promotion={false}
+          country="USA"
+          joinedDate="2024-12-01"
+        />
       </CompanyTable>
     </>
   );
