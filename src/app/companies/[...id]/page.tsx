@@ -4,23 +4,24 @@ import Header from "@/app/components/header";
 
  export  interface PageProps {
    params: {
-    id: string
+    id: string[]
   };
 }
-export function generateStaticParams() {
-  return [
-    { id: "1" },
-    { id: "2" },
-    { id: "3" }
-  ];
-}
+// export function generateStaticParams() {
+//   return [
+//     { id: "1" },
+//     { id: "2" },
+//     { id: "3" }
+//   ];
+// }
 
 export default async function Page({params}: PageProps) {
   const {id} = await params;
   return (
     <>
-      <Header>Companies ({id})</Header>
+      <Header>Companies ({String(id)})</Header>
       <p>{new Date().toLocaleTimeString()}</p>
+      <p>{new Date().toTimeString()}</p>
     </>
   );
 }
