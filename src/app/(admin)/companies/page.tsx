@@ -15,29 +15,31 @@ export default function Page({}: PageProps) {
   return (
     <>
       <Header>Companies</Header>
-      <Toolbar action={<AddCompanyButton />}>
-        <SearchInput />
-      </Toolbar>
-      <CompanyTable>
-        <CompanyRow
-          id={1}
-          category="Products"
-          company="Costco"
-          status={Status.Pending}
-          promotion={true}
-          country="USA"
-          joinedDate="2023-01-01"
-        />
-                <CompanyRow
-          id={2}
-          category="Products"
-          company="Pepsi"
-          status={Status.Active}
-          promotion={false}
-          country="USA"
-          joinedDate="2024-12-01"
-        />
-      </CompanyTable>
+      <main>
+        <Toolbar action={<AddCompanyButton />}>
+          <SearchInput />
+        </Toolbar>
+        <CompanyTable>
+          <CompanyRow
+            id={1}
+            category="Products"
+            company="Costco"
+            status={Status.Pending}
+            promotion={true}
+            country="USA"
+            joinedDate="2023-01-01"
+          />
+          <CompanyRow
+            id={2}
+            category="Products"
+            company="Pepsi"
+            status={Status.Active}
+            promotion={false}
+            country="USA"
+            joinedDate="2024-12-01"
+          />
+        </CompanyTable>
+      </main>
     </>
   );
 }
