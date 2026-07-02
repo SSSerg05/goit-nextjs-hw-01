@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",
+    "@tailwindcss/vite": "^4.3.2",
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^10.1.8",
     "formik": "^2.4.9",
@@ -27,7 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "postcss": "^8.5.15",
-    "tailwindcss": "^4.3.0",
+    "tailwindcss": "^4.3.2",
     "typescript": "^5"
   }
 }
