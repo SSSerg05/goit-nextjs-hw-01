@@ -39,8 +39,8 @@ export default function Sidebar({}: SidebarProps) {
           <Image
             width={18}
             height={18}
-            src="/icons/logout.svg"
-            alt="logout icon"
+            src="/icons/arrow-left-on-rectangle.svg"
+            alt="exit icon"
           />
           <span className="font-medium text-white">Exit</span>
         </button>
