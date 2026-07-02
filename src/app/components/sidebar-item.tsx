@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export interface SidebarItemProps {
   pathname: string;
@@ -16,7 +17,7 @@ export default function SidebarItem({
 }: SidebarItemProps) {
   return (
     <li>
-      <a href={pathname} className="flex items-center h-9 gap-3.5">
+      <Link href={pathname} className="flex items-center h-9 gap-3.5">
         <Image
           className="ml-5"
           width={18}
@@ -25,7 +26,7 @@ export default function SidebarItem({
           alt={alt}
         />
         <span className="font-medium text-zinc-50">{children}</span>
-      </a>
+      </Link>
     </li>
   );
 }
