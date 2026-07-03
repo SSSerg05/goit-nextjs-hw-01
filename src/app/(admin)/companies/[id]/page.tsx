@@ -1,11 +1,11 @@
+'use client'
+
 import React, { useEffect } from "react";
 import Header from "@/app/components/header";
 import { notFound } from "next/navigation";
 
  export  interface PageProps {
-   params: {
-    id: string
-  };
+   params: { id: string };
 }
 // export function generateStaticParams() {
 //   return [
@@ -15,8 +15,8 @@ import { notFound } from "next/navigation";
 //   ];
 // }
 
-export default async function Page({params}: PageProps) {
-  const {id} = await params.id;
+export default function Page({params}: PageProps) {
+  const id = React.use(params.id);
   useEffect(() => {
     const {id_u} = Number(id);
     if (Number.isNaN(id_u)) {
