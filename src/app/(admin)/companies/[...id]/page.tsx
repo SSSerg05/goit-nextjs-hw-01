@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "@/app/components/header";
-
+import { notFound } from "next/navigation";
 
  export  interface PageProps {
    params: {
-    id: string[]
+    id: string
   };
 }
 // export function generateStaticParams() {
@@ -16,7 +16,14 @@ import Header from "@/app/components/header";
 // }
 
 export default async function Page({params}: PageProps) {
-  const {id} = await params;
+  const {id} = await params.id;
+  useEffect(() => {
+    const {id_u} = Number(id);
+    if (Number.isNaN(id_u)) {
+      notFound();
+    }
+  }, [id]);
+
   return (
     <>
       <Header>Companies ({String(id)})</Header>

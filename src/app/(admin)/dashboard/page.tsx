@@ -1,4 +1,5 @@
 import React from "react";
+import MagicButton from "@/app/components/magic-button";
 
 export interface PageProps {
   params: '0';
@@ -12,6 +13,8 @@ export default function Page({}: PageProps) {
         <p className="text-lg text-gray-600 mt-4">
           Welcome to your dashboard!
         </p>
+        <MagicButton />
+
       </main>
     </div>
   );
