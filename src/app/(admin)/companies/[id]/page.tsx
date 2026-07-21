@@ -4,8 +4,9 @@ import React, { useEffect } from "react";
 import Header from "@/app/components/header";
 import { notFound } from "next/navigation";
 
+
  export  interface PageProps {
-   params: { id: string };
+    params: Promise<{ id: string }> 
 }
 // export function generateStaticParams() {
 //   return [
@@ -15,8 +16,12 @@ import { notFound } from "next/navigation";
 //   ];
 // }
 
-export default function Page({ params }: { params: Promise<{ id: string }> }) {
-  const id = React.use(params);
+export default function Page({ params }: PageProps) {
+  const {id} = React.use(params);
+  console.log("id", id, Number(id), Number.isNaN(id));
+
+
+
   useEffect(() => {
     const id_u = Number(id);
     if (Number.isNaN(id_u)) {
