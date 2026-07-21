@@ -15,10 +15,10 @@ import { notFound } from "next/navigation";
 //   ];
 // }
 
-export default function Page({params}: PageProps) {
-  const id = React.use(params.id);
+export default function Page({ params }: { params: Promise<{ id: string }> }) {
+  const id = React.use(params);
   useEffect(() => {
-    const {id_u} = Number(id);
+    const id_u = Number(id);
     if (Number.isNaN(id_u)) {
       notFound();
     }
