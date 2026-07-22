@@ -12,7 +12,7 @@ export function SummaryTable({ headers, children }: SummaryTableProps) {
         <thead className="bg-gray-50">
           <tr>{headers}</tr>
         </thead>
-        <tbody className="[&>tr:nth-child(2n)]:bg-gray-100 [&>tr:nth-child(2n)]:bg-white">
+        <tbody className="[&>tr:nth-child(2n)]:bg-gray-100 [&>tr:nth-child(2n+1)]:bg-white">
           {children}
         </tbody>
       </table>

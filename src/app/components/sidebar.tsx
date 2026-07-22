@@ -19,9 +19,9 @@ export default function Sidebar({}: SidebarProps) {
   return (
     <aside className="fixed top-0 left-0 z-40 w-60 h-screen">
 
-      <div className="flex flex-col items-center h-full overflow-y-auto bg-gray-900">
+      <div className="flex flex-col items-center h-full gap-15 overflow-y-auto bg-gray-900">
         <Image
-          className="py-8 mb-11 mx-auto"
+          className="py-8 mb-21 mx-auto"
           width={122}
           height={25} 
           src="/icons/logo.svg"

@@ -13,7 +13,7 @@ export interface PageProps {
 
 export default function Page({}: PageProps) {
   return (
-    <>
+    <div className="flex flex-col items-center-safe ">
       <Header>Companies</Header>
       <main>
         <Toolbar action={<AddCompanyButton />}>
@@ -40,7 +40,7 @@ export default function Page({}: PageProps) {
           />
         </CompanyTable>
       </main>
-    </>
+    </div>
   );
 }
 

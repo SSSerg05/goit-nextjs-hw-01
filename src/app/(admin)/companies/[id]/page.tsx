@@ -5,22 +5,13 @@ import Header from "@/app/components/header";
 import { notFound } from "next/navigation";
 
 
- export  interface PageProps {
+ export interface PageProps {
     params: Promise<{ id: string }> 
 }
-// export function generateStaticParams() {
-//   return [
-//     { id: "1" },
-//     { id: "2" },
-//     { id: "3" }
-//   ];
-// }
+
 
 export default function Page({ params }: PageProps) {
   const {id} = React.use(params);
-  console.log("id", id, Number(id), Number.isNaN(id));
-
-
 
   useEffect(() => {
     const id_u = Number(id);

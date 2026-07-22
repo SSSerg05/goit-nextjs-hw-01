@@ -19,6 +19,10 @@ export default function Header({ children }: HeaderProps) {
             width={44}
             height={44}
           />
+          <div>
+            <p className="text-base font-semibold text-gray-900">John Doe</p>
+            <p className="text-sm font-light text-gray-500">Admin</p>
+          </div>
         </div>
       </div>
     </header>
