@@ -1,7 +1,8 @@
 import React from "react";
 import { getSummaryCategories } from "@/lib/api";
-import StatsCard, {StatCardType} from "@/app/components/stat-card/stat-card";
+import StatCard, {StatCardType} from "@/app/components/stat-card/stat-card";
 import {DashboardCard} from "@/app/components/dashboard-card";
+
 
 
 
@@ -12,8 +13,18 @@ export interface PageProps {
 export default async function Page({}: PageProps) {
   const data = await getSummaryCategories();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2"> 
- 
-    </div>
+    <DashboardCard label="Categories of companies">
+      <div className="grid grid-cols-12 gap-3 pb-5 px-5"> 
+        {data.map(({ categoryId, categoryTitle, categoryCount }) => (
+          <div key={categoryId} className="col-span-3">
+            <StatCard
+              type={StatCardType.Dark}
+              label={categoryTitle}
+              counter={categoryCount}
+            />
+          </div>
+        ))}
+      </div>  
+    </DashboardCard>
   );
 }
