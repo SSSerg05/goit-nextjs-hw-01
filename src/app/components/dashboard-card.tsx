@@ -1,7 +1,7 @@
 import React from "react";  
 
 export interface DashboardCardProps {
-  label: string;
+  label: React.ReactNode;
   children: React.ReactNode;
 }
 

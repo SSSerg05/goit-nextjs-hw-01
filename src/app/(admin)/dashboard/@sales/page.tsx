@@ -28,7 +28,7 @@ export default async function Page({}: PageProps) {
           <tr key={companyId}>
             <SummaryTableCell>{companyTitle}</SummaryTableCell>
             <SummaryTableCell align="center">{sold}</SummaryTableCell>
-            <SummaryTableCell align="center">{income}</SummaryTableCell>
+            <SummaryTableCell align="center">{`$${income}`}</SummaryTableCell>
           </tr>
         ))}
       </SummaryTable>
