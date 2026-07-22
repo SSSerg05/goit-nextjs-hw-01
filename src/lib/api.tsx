@@ -1,5 +1,3 @@
-import React from "react";
-
 export const getSummaryStats = () => {
   return Promise.resolve({
     promotions: 427,
