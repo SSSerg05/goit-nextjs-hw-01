@@ -10,7 +10,14 @@ export interface LayoutProps {
   promotions: React.ReactNode,
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ 
+  children, 
+  stats, 
+  sales, 
+  categories, 
+  countries, 
+  promotions 
+}: LayoutProps) {
   return (
     <div>
       <Sidebar />
