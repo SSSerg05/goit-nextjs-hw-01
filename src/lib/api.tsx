@@ -36,14 +36,14 @@ export const getSummaryCountries = () => {
 
 export const getSummaryCategories = () => {
   return Promise.resolve([
-    { categoryId: 1, categoryTitle: "Electronics", companies: 120 },
-    { categoryId: 2, categoryTitle: "Fashion", companies: 80 },
-    { categoryId: 3, categoryTitle: "Home & Garden", companies: 60 },
-    { categoryId: 4, categoryTitle: "Sports & Outdoors", companies: 40 },
-    { categoryId: 5, categoryTitle: "Health & Beauty", companies: 30 },
-    { categoryId: 6, categoryTitle: "Toys & Games", companies: 20 },
-    { categoryId: 7, categoryTitle: "Automotive", companies: 10 },
-    { categoryId: 8, categoryTitle: "Books & Media", companies: 5 },
+    { categoryId: 1, categoryTitle: "Electronics", categoryCount: 120 },
+    { categoryId: 2, categoryTitle: "Fashion", categoryCount: 80 },
+    { categoryId: 3, categoryTitle: "Home & Garden", categoryCount: 60 },
+    { categoryId: 4, categoryTitle: "Sports & Outdoors", categoryCount: 40 },
+    { categoryId: 5, categoryTitle: "Health & Beauty", categoryCount: 30 },
+    { categoryId: 6, categoryTitle: "Toys & Games", categoryCount: 20 },
+    { categoryId: 7, categoryTitle: "Automotive", categoryCount: 10 },
+    { categoryId: 8, categoryTitle: "Books & Media", categoryCount: 5 },
   ]);
 }
 

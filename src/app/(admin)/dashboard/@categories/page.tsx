@@ -3,9 +3,6 @@ import { getSummaryCategories } from "@/lib/api";
 import StatCard, {StatCardType} from "@/app/components/stat-card/stat-card";
 import {DashboardCard} from "@/app/components/dashboard-card";
 
-
-
-
 export interface PageProps {
   params: '0';
 }
