@@ -12,9 +12,9 @@ export default function Header({ children }: HeaderProps) {
         {children}
       </h1>
       
-      <div className="w-px self-stretch bg-gray-300" />
+      {/* <div className="w-px self-stretch bg-gray-300" /> */}
       
-      <div className="flex gap-3 items-center"> 
+      <div className="flex gap-3 items-center flex-shrink-0 pl-5 border-l border-gray-300 h-11"> 
         <Image 
           src="/images/avatar.png"
           alt="avatar"
@@ -22,8 +22,8 @@ export default function Header({ children }: HeaderProps) {
           height={44}
         />
         <div>
-          <p className="text-base font-semibold text-gray-900">John Doe</p>
-          <p className="text-sm font-light text-gray-500">Admin</p>
+          <p className="text-base font-semibold text-gray-900 leading-tight">John Doe</p>
+          <p className="text-sm font-light text-gray-500 leading-tight">Admin</p>
         </div>
       </div>
     </header>

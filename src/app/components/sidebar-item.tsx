@@ -24,6 +24,7 @@ export default function SidebarItem({
         current && "after:h-full after:ml-auto after:border-2 after:border-purple-200 after:rounded-r-sm ")}>
         <Image
           className="ml-5"
+          loading="lazy"
           width={18}
           height={18}
           src={src}

@@ -24,6 +24,7 @@ export default function Sidebar({}: SidebarProps) {
           className="py-8 mb-21 mx-auto"
           width={122}
           height={25} 
+          loading="lazy"
           src="/icons/logo.svg"
           alt="Logo"
         />
