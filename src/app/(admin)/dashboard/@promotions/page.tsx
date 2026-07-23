@@ -12,15 +12,26 @@ export interface PageProps {
 
 export default async function Page({}: PageProps) {
   const data = await getSummaryPromotions();
+  const columns = [
+    { name: 'Company', align: 'text-left' },
+    { name: 'Name', align: 'text-left' },
+    { name: '%', align: 'text-center' }
+  ] as const;
 
   return (
     <DashboardCard label="Promotions">
       <SummaryTable
         headers={
           <>
-            <SummaryTableHeader>Company</SummaryTableHeader>
-            <SummaryTableHeader>Name</SummaryTableHeader>
-            <SummaryTableHeader align="text-center">%</SummaryTableHeader>
+            {columns.map((column, i) => (
+              <SummaryTableHeader key={i} align={column.align} index={i}>
+                {column.name}
+              </SummaryTableHeader>
+            ))}
+
+            {/* // <SummaryTableHeader>Company</SummaryTableHeader>
+            // <SummaryTableHeader>Name</SummaryTableHeader>
+            // <SummaryTableHeader align="text-center">%</SummaryTableHeader> */}
           </>
         }
       >

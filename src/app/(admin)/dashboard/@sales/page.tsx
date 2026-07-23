@@ -13,14 +13,26 @@ export interface PageProps {
 
 export default async function Page({}: PageProps) {
   const data = await getSummarySales();
+  const columns = [
+    { name: 'Company', align: 'text-left' },
+    { name: 'Sold', align: 'text-center' },
+    { name: 'Income', align: 'text-center' }
+  ] as const;
+
   return (
     <DashboardCard label="Sales details">
       <SummaryTable
         headers={
           <>
-            <SummaryTableHeader>Company</SummaryTableHeader>
+            {columns.map((column, i) => (
+              <SummaryTableHeader key={i} align={column.align} index={i}>
+                {column.name}
+              </SummaryTableHeader>
+            ))}
+
+            {/* <SummaryTableHeader>Company</SummaryTableHeader>
             <SummaryTableHeader align="text-center">Sold</SummaryTableHeader>
-            <SummaryTableHeader align="text-center">Income</SummaryTableHeader>
+            <SummaryTableHeader align="text-center">Income</SummaryTableHeader> */}
           </>
         }
       >

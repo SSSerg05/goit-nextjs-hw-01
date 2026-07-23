@@ -9,7 +9,7 @@ export function SummaryTable({ headers, children }: SummaryTableProps) {
   return (
     <div className="overflow-x-auto">
       <table className="table-auto w-full border-separate border-spacing-0">
-        <thead className="bg-gray-50">
+        <thead className="bg-transparent">
           <tr>{headers}</tr>
         </thead>
         <tbody className="[&>tr:nth-child(2n)]:bg-gray-100 [&>tr:nth-child(2n+1)]:bg-white">
