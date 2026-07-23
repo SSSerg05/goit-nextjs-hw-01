@@ -20,7 +20,7 @@ export default async function Page({}: PageProps) {
           <>
             <SummaryTableHeader>Company</SummaryTableHeader>
             <SummaryTableHeader>Name</SummaryTableHeader>
-            <SummaryTableHeader align="center">%</SummaryTableHeader>
+            <SummaryTableHeader align="text-center">%</SummaryTableHeader>
           </>
         }
       >
@@ -28,7 +28,7 @@ export default async function Page({}: PageProps) {
           <tr key={promotionId}>
             <SummaryTableCell>{companyTitle}</SummaryTableCell>
             <SummaryTableCell>{promotionName}</SummaryTableCell>
-            <SummaryTableCell align="center">{`-${discount}%`}</SummaryTableCell>
+            <SummaryTableCell align="text-center">{`-${discount}%`}</SummaryTableCell>
           </tr>
         ))}
       </SummaryTable>

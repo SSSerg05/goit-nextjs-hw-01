@@ -14,7 +14,7 @@ export default function Header({ children }: HeaderProps) {
       
       {/* <div className="w-px self-stretch bg-gray-300" /> */}
       
-      <div className="flex gap-3 items-center flex-shrink-0 pl-5 border-l border-gray-300 h-11"> 
+      <div className="flex gap-3 items-center shrink-0 pl-5 border-l border-gray-300 h-11"> 
         <Image 
           src="/images/avatar.png"
           alt="avatar"

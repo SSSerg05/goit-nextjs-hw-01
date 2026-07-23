@@ -16,7 +16,7 @@ const headers = [
 export default function CompanyTable({ children }: CompanyTableProps) {
   return (
     <div className="py-8 px-10 bg-gray-100 overflow-x-auto">
-      <table className="table-auto w-full border-separate border-spacing-y-2 min-w-[600px]">
+      <table className="table-auto w-full border-separate border-spacing-y-2 min-w-150">
         <thead>
           <tr>
             {headers.map((header, i) => (
