@@ -26,7 +26,7 @@ export default async function Page({}: PageProps) {
                 >{`${countryTitle} - ${companyCount}`}</p>
           ))}
         </div>
-        <Image width={200} height={200} src="@/public/world-map.png" alt="World Map" />
+        <Image width={200} height={200} src="/images/world-map.png" alt="World Map" />
       </div>
     </DashboardCard>
   );
