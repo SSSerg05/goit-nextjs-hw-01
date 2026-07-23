@@ -13,7 +13,7 @@ export const getSummaryPromotions = () => {
     items.push({
       promotionId: i + 1,
       promotionName: `Lorem ipsum dolor`,
-      promotionTitle: `Costco Wholesaler`,
+      companyTitle: `Costco Wholesaler`,
       discount: 40,
     });
   }
