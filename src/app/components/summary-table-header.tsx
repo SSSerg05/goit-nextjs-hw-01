@@ -20,7 +20,7 @@ export default function SummaryTableHeader({
 }: SummaryTableHeaderProps) {
   return (
     <th className={clsx(
-      "px-5 py-2 text-xs font-normal first-of-type:rounded-l-sm last-of-type:rounded-r-sm",
+      "text-xs font-normal first-of-type:rounded-l-sm last-of-type:rounded-r-sm",
       align, 
       themeColors[index % 3],
       // // 1-я, 4-я, 7-я колонки (3n + 1) -> Темные

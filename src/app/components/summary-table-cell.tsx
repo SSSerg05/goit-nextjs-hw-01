@@ -12,7 +12,7 @@ export default function SummaryTableCell({
 }: SummaryTableCellProps) {
   return (
     <td className={clsx(
-      "px-5 py-2 text-sm border-gray-100 border-r first-of-type:border-l",
+      "text-sm border-gray-100 border-r first-of-type:border-l",
       align,
     )}>
       {children}
