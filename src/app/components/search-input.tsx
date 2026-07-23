@@ -21,7 +21,7 @@ export default function SearchInput({
       />
       <button
         type="button"
-        className="absolute top-0 right-0 p-3"
+        className="absolute top-3 right-2 p-3"
         onClick={onSearchClick}
       >
         <Image
