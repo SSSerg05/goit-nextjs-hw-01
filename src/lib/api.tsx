@@ -22,14 +22,14 @@ export const getSummaryPromotions = () => {
 
 export const getSummaryCountries = () => {
   return Promise.resolve([
-    { countryId: 1, countryTitle: "United States", companies: 120 },
-    { countryId: 2, countryTitle: "Canada", companies: 80 },
-    { countryId: 3, countryTitle: "United Kingdom", companies: 60 },
-    { countryId: 4, countryTitle: "Germany", companies: 40 },
-    { countryId: 5, countryTitle: "France", companies: 30 },
-    { countryId: 6, countryTitle: "Australia", companies: 20 },
-    { countryId: 7, countryTitle: "Japan", companies: 10 },
-    { countryId: 8, countryTitle: "China", companies: 5 },
+    { countryId: 1, countryTitle: "United States", companyCount: 120 },
+    { countryId: 2, countryTitle: "Canada", companyCount: 80 },
+    { countryId: 3, countryTitle: "United Kingdom", companyCount: 60 },
+    { countryId: 4, countryTitle: "Germany", companyCount: 40 },
+    { countryId: 5, countryTitle: "France", companyCount: 30 },
+    { countryId: 6, countryTitle: "Australia", companyCount: 20 },
+    { countryId: 7, countryTitle: "Japan", companyCount: 10 },
+    { countryId: 8, countryTitle: "China", companyCount: 5 },
   ]);
 }
 
