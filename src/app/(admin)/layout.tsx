@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Sidebar />
-      <div className="ml-60">{children}</div>
+      <div className="ml-60 w-full flex flex-col min-h-screen">{children}</div>
     </>
   );
 }
